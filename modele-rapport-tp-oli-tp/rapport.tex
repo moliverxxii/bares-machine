@@ -1,0 +1,125 @@
+\documentclass{article}[a4paper]
+
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{graphics}
+\graphicspath{{images/} {images/util/}}
+
+%Mettre le nom de la matière du TP du jour.
+\newcommand{\subject}{Matière enseignée à l'école} 
+
+%Mettre ici le nom du binome qui écrit le rapport.
+\newcommand{\binomeUn}{Axel Farrugia} 
+%Mettre ici l'autre nom qui bosse. 
+\newcommand{\binomeDeux}{Oliver Michalowski} 
+%Mettre ici le numéro de TP
+\newcommand{\numTP}{\#}
+
+\title{Compte rendu de travaux pratiques (\subject)\newline TP\numTP}
+\author{\binomeUn \ \& \binomeDeux}
+
+
+
+
+
+
+
+%___________________________________________________________________________
+
+\begin{document}
+	\maketitle
+	\begin{center}
+		\includegraphics{"Logo ENSEA"}
+	\end{center}
+	\tableofcontents
+	
+	%Décommenter si nécessaire
+	\section*{Introduction}
+	Le but de ce TP est de comprendre comment faire communiquer différents appareils à l'aide de bus de communication.
+	
+	%vvv Le TP commence ici vvv
+	\section{I2C}
+		après configuration de la puce STM32
+
+		\subsection{Le Capteur de pression/température, BMP280}
+		%adresse b a111 011x
+		%write : a == 0 
+		%1010 0000
+		%id 0x58
+		
+	
+	%Décommenter si nécessaire
+	\section{Conclusion}
+	
+	%Décommenter si nécessaire
+	%\section{Annnexe}
+
+\end{document}
+
+
+
+
+
+
+
+%___________________________________________________________________________
+%________AIDE-MEMOIRE_______________________________________________________
+%___________________________________________________________________________
+
+%Saut de ligne
+%\\
+
+%Grande partie de TP :
+%\section{}
+%Petite partie de TP :
+
+%Pour faire une remarque : 
+%\paragraph{Remarque}
+
+%Note de bas de page : 
+%\footnote{Remarque en note de pied de page}
+
+%Pour écrire en mathématique (plus de commandes sur Internet) :
+%$<formule>$
+%
+%\begin{math}
+%	<formule sur une nouvelle ligne non numérotée>
+%\end{math}
+%
+%
+%\begin{equation}
+%	<formule sur une nouvelle ligne non numérotée>
+%\end{equation}
+%
+%
+%Faire une figure "flottante"
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=.5\linewidth]{image}
+%	\caption{légende}
+%	\label{fig:img}
+%\end{figure}
+%
+%Référencer la figure : 
+%"voir la figure \ref{fig:img}"
+%
+%
+
+
+
+
+
+%En cas de problème, supprimer les fichiers aux/log.
+%Pour en apprendre plus voir également :
+%
+%	LATEX2e: An unofficial reference manual
+%
+%l'ouvrage qui m'a aidé à apprendre le latex.
+%(Utile pour les tables et tabular par exemple)
+
+%___________________________________________________________________________
+%____FIN_AIDE-MEMOIRE_______________________________________________________
+%___________________________________________________________________________
+
